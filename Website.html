@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    header {
+        text-align: center; /* Align the text to the right */
+        text-decoration: underline; /* Add underline */
+        color: #333; /* Set the color to red */
+    }
+
+    h2 {
+        text-decoration: underline; /* Add underline */
+        color: #333; /* Set the color to red */
+    }
+
+    body {
+      font-family: 'Oswald', monospace;
+      font-size: 18px;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    main {
+      padding-top: 70px; /* Adjust as needed based on header height */
+    }
+
+    .container {
+      display: flex; /* Use flexbox for layout */
+      justify-content: space-between; /* Space out the items */
+      align-items: flex-start; /* Align items to the top */
+      padding: 20px; /* Add padding */
+      padding-bottom: 120px; /* Add padding at the bottom */
+    }
+
+    .image-left, .image-right {
+        flex: 1;
+        text-align: center;
+    }
+
+    .image-left img, .image-right img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .synopsis {
+      flex: 1;
+    }
+
+    .synopsis h2 {
+      text-align: center; /* Center the heading */
+    }
+
+    .synopsis h3 {
+        text-align: center;
+    }
+
+    .synopsis p {
+      text-align: justify; /* Justify text */
+      max-width: 500px; /* Limit the width to prevent text from stretching too far */
+      margin: 0 auto; /* Center the text */
+    }
+
+    .image-tkinter {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-tkinter img {
+        max-width: 100%; /* Ensure the image fits within the container */
+        height: auto;
+        margin-bottom: 20px; /* Add margin to the bottom */
+    }
+
+    .button {
+        display: block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px; /* Add margin to the top */
+    }
+
+
+    .button:hover {
+      background-color: #ff0000;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 100; /* Ensure footer stays above other content */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CASINO GAMES</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="image-left">
+        <img src="./ImageFiles/cards.jpg" alt="Cards">
+      </div>
+      <div class="image-tkinter">
+        <img src="./ImageFiles/Tkinter.png" alt="Tkinter Image">
+        <a href="./PythonFiles/Sample.zip" download class="button">Download</a>
+      </div>
+      <div class="image-right">
+        <img src="./ImageFiles/chips.jpg" alt="Chips">
+      </div>
+    </div>
+    <div class="container">
+      <div class="synopsis">
+        <h2>War Rules</h2>
+        
+        <h3>Objective:</h3>
+        <p>The objective of the game is to wager bets against the computer in a series of rounds of a simplified version of the card game "War." The player aims to win as many rounds as possible to increase their bank balance.</p>
+        
+        <h3>Game Setup:</h3>
+        <p>Both the player and the computer start with a bank balance of 100.</p>
+        <p>The player places a bet from their bank balance to initiate each round.</p>
+        
+        <h3>Gameplay:</h3>
+        <p>In War, both the player and the computer draw a number from 1 to 10 each round. The higher number wins, earning the player a payout. Ties lead to a "war," where three more numbers are drawn. The player wins if their highest war number beats the computer's. Otherwise, they lose. If it's still a tie, the war continues until there's a winner.</p>
+    </div>
+      <div class="synopsis">
+        <h2>Blackjack Rules</h2>
+        
+        <h3>Objective:</h3>
+        <p>The objective of the game is to beat the dealer (computer) by getting a hand value closer to 21 without going over it (busting).</p>
+        
+        <h3>Game Setup:</h3>
+        <p>Both the player and the computer start with a bank balance of 100.</p>
+        <p>The player places a bet from their bank balance to start the game.</p>
+        <p>The player and the computer are each dealt two initial cards from a standard deck of cards, where each card is worth its face value.</p>
+        
+        <h3>Gameplay:</h3>
+        <p>In Blackjack, players aim to get a hand value close to 21 without going over. They start with two cards and can choose to draw more ("hit") or keep their current hand ("stand"). Whoever gets closest to 21 without going over wins. If a player goes over 21, they lose.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 CASINO GAMES</p>
+  </footer>
+</body>
+</html>
